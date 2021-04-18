@@ -1,5 +1,10 @@
 <html lang="en">
  <link href="homepage.css">
+ <style>
+   a{
+     font-size: 15px;
+   }
+ </style>
  <head>
     <title>Table Tennis World</title>
     <meta charset="utf-8">
@@ -16,7 +21,7 @@
      <br>
      <div id="myCarousel" class="carousel slide" data-ride="carousel">
        <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="0" type="responsive"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
        </ol>
@@ -25,8 +30,9 @@
           <div class="item active">
            <img src="facts.jpg" alt="acts">
            <div class="carousel-caption">
-             <h1>Amazing Facts</h1>
-            </div>
+             <a href="amazing facts.html">Amazing Facts</a>
+             </div>
+             
           </div>
     
           <div class="item">
@@ -79,14 +85,27 @@
          <p>Discover how to improve your skills and play better table tennis</p>
        </div><br> <br><a href="how to play.html">
        <button type="submit">Check out</button>
-       </a>
+       </a><br>
      </div>
      <div class="col-sm-4">
+        <p><strong>Choosing equipments</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="equipement.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Pick the best equipments according to your level and gameplay</p>
+        </div><br><br>
+        <a href="">
+          <button type="submit">Check out</button>
+        </a>
+     </div>
+     <div class="col-sm-4">
+       <br><br>
        <p><strong>Rules and regulations</strong></p><br>
-       <a href="#demo3" data-toggle="collapse">
+       <a href="#demo4" data-toggle="collapse">
          <img src="rules.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
        </a>
-       <div id="demo3" class="collapse">
+       <div id="demo4" class="collapse">
          <p>Get to know all the rules about table tennis</p>
        </div><br><br>
        <a href="rule.html">
@@ -100,10 +119,10 @@
      <div class="col-sm-4">
        <br><br>
        <p><strong>Top players</strong></p><br>
-       <a href="#demo4" data-toggle="collapse">
+       <a href="#demo5" data-toggle="collapse">
          <img src="top.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
        </a>
-       <div id="demo4" class="collapse">
+       <div id="demo5" class="collapse">
          <p>Detailed World Ranking List</p>
        </div><br><br>
        <button type="submit">Check out</button>
@@ -111,10 +130,10 @@
      <div class="col-sm-4">
        <br><br>
        <p><strong>Related books</strong></p><br>
-       <a href="#demo5" data toggle="collapse">
+       <a href="#demo6" data-toggle="collapse">
          <img src="book.jpg" class="img-circle person" alt="random name" width="255" height="255">
        </a>
-       <div id="demo5" class="collapse">
+       <div id="demo6" class="collapse">
          <p>Read some of the great books of table tennis</p>
        </div><br><br>
        <button class="button button2">Check out</button>
@@ -122,10 +141,10 @@
      <div class="col-sm-4">
        <br><br>
        <p><strong>Table tennis clubs</strong></p><br>
-       <a href="#demo6" data toggle="collapse">
+       <a href="#demo7" data-toggle="collapse">
          <img src="club.jpg" class="img-circle person" alt="random name" width="255" height="255">
        </a>
-       <div id="demo6" class="collapse">
+       <div id="demo7" class="collapse">
          <p>How to find a club near you or start and run your own</p>
        </div><br><br>
        <button type="submit">Check out</button>
@@ -133,10 +152,10 @@
      <div class="col-sm-4">
        <br><br>
        <p><strong>Coaching advice</strong></p><br>
-       <a href="#demo7" data toggle="collapse">
+       <a href="#demo8" data-toggle="collapse">
          <img src="coaching.jpg" class="img-circle person" alt="random name" width="255" height="255">
        </a>
-       <div id="demo7" class="collapse">
+       <div id="demo8" class="collapse">
          <p>Submit your video for coaching analysis</p>
        </div><br><br>
        <button type="submit">Check out</button>
@@ -144,14 +163,42 @@
      <div class="col-sm-4">
        <br><br>
        <p><strong>Ask it out</strong></p><br>
-       <a href="#demo8" data toggle="collapse">
+       <a href="#demo9" data-toggle="collapse">
          <img src="query.jpg" class="img-circle person" alt="random name" width="255" height="255">
        </a>
-       <div id="demo8" class="collapse">
+       <div id="demo9" class="collapse">
          <p>Submit your queries</p>
        </div><br><br>
        <button type="submit">Check out</button>
       </div>
+   </div>
+   <br><br><br><br>
+   <div class="container">
+    <h3 class="text-center">Contact</h3><br>
+    <div class="row test">
+      <div class="col-md-4">
+        <p>Fan of Table Tennis? </p><br>
+        <p><em>Drop a note or your personal experience in practicing this great sport and your journey.</em></p><br>
+        <p2><span class="glyphicon glyphicon-map-marker"></span>Maharashtra , India</p2><br>
+        <p2><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p2><br>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
    </div>
  </body>
 </html>
